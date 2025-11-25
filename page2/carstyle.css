@@ -10,6 +10,7 @@ body {
   gap: 100px;
   height: 100vh;
   background-color: #121212;
+  position: relative;
 }
 .head {
   display: flex;
@@ -30,16 +31,20 @@ h1 {
 img {
   width: 65px;
 }
-.scooter {
+.homeImg {
+  margin-top: 10px;
+  margin-left: 10px;
   width: 50px;
 }
 .homePage {
-  display: flex;
-  align-self: flex-start;
-  margin-top: 10px;
-  margin-left: 10px;
-  height: 40px;
+  position: absolute;
+  top: 10px;
+  left: 10px;
 }
+.scooter {
+  width: 50px;
+}
+
 .homePage:hover {
   scale: 1.5;
 }
