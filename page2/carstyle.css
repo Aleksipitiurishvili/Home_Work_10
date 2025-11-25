@@ -1,0 +1,209 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 100px;
+  height: 100vh;
+  background-color: #121212;
+}
+.head {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  letter-spacing: 5px;
+}
+h1 {
+  color: #cf6679;
+  text-shadow: 0px 0px 4px #cf6679;
+  font-size: 35px;
+}
+.underH1 {
+  color: #cf6679;
+  font-size: 25px;
+}
+img {
+  width: 65px;
+}
+.scooter {
+  width: 50px;
+}
+.homePage {
+  display: flex;
+  align-self: flex-start;
+  margin-top: 10px;
+  margin-left: 10px;
+  height: 40px;
+}
+.homePage:hover {
+  scale: 1.5;
+}
+.carBox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  border-radius: 20px;
+  width: 800px;
+  height: 630px;
+  background-color: #121212;
+}
+.cars {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.road {
+  display: flex;
+  align-items: center;
+  border-radius: 20px;
+  padding: 20px;
+  width: 700px;
+  height: 80px;
+  border: 2px solid #cf6679;
+  transition-property: bigger;
+  transition-duration: 1s;
+  transition-timing-function: ease;
+  transition-delay: 0s;
+}
+.road:hover {
+  scale: 2;
+  background-color: #121212;
+}
+.car {
+  animation-name: car;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease;
+  animation-delay: 0s;
+}
+@keyframes car {
+  0% {
+    transform: translateX(0px);
+  }
+  50% {
+    transform: translate(600px) rotateY(0deg);
+  }
+  51% {
+    transform: translate(600px) rotateY(180deg);
+  }
+
+  100% {
+    transform: translate(0px) rotateY(180deg);
+  }
+}
+.ship {
+  animation-name: ship;
+  animation-duration: 7s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  animation-delay: 0s;
+}
+@keyframes ship {
+  0% {
+    transform: translateX(0px);
+  }
+  50% {
+    transform: translate(600px) rotateY(0deg);
+  }
+  55% {
+    transform: translate(600px) rotateY(180deg);
+  }
+
+  100% {
+    transform: translate(0px) rotateY(180deg);
+  }
+}
+.helicopter {
+  animation-name: helicopter;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in;
+  animation-delay: 0s;
+}
+@keyframes helicopter {
+  0% {
+    transform: translateX(0px);
+  }
+  50% {
+    transform: translate(600px) rotateY(0deg);
+  }
+  55% {
+    transform: translate(600px) rotateY(180deg);
+  }
+
+  100% {
+    transform: translate(0px) rotateY(180deg);
+  }
+}
+.scooter {
+  animation-name: scooter;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-out;
+  animation-delay: 0s;
+}
+@keyframes scooter {
+  0% {
+    transform: translateX(0px);
+  }
+  50% {
+    transform: translate(600px) rotateY(0deg);
+  }
+  55% {
+    transform: translate(600px) rotateY(180deg);
+  }
+
+  100% {
+    transform: translate(0px) rotateY(180deg);
+  }
+}
+.bicycle {
+  animation-name: bicycle;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  animation-delay: 0s;
+}
+@keyframes bicycle {
+  0% {
+    transform: translateX(0px);
+  }
+  50% {
+    transform: translate(600px) rotateY(0deg);
+  }
+  55% {
+    transform: translate(600px) rotateY(180deg);
+  }
+
+  100% {
+    transform: translate(0px) rotateY(180deg);
+  }
+}
+.moped {
+  animation-name: moped;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  animation-delay: 0s;
+}
+@keyframes moped {
+  0% {
+    transform: translateX(0px);
+  }
+  50% {
+    transform: translate(500px) rotateY(0deg);
+  }
+  55% {
+    transform: translate(500px) rotateY(180deg);
+  }
+
+  100% {
+    transform: translate(0px) rotateY(180deg);
+  }
+}
